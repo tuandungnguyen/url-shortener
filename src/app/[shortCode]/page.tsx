@@ -39,6 +39,8 @@
 //         redirect(result.url);
 //     }
 // }
+
+"use client"
 import { open } from 'sqlite';
 import sqlite3 from 'sqlite3';
 import path from 'path';
@@ -96,7 +98,6 @@ export default function UrlPage({ params }: UrlPageProps) {
         }
     };
 
-    // Auto redirect after 5 seconds
     useEffect(() => {
         const timer = setTimeout(() => {
             if (url) {
@@ -104,7 +105,7 @@ export default function UrlPage({ params }: UrlPageProps) {
             }
         }, 5000);
 
-        return () => clearTimeout(timer); // Cleanup the timer on component unmount
+        return () => clearTimeout(timer);
     }, [url]);
 
     if (loading) {
