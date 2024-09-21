@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
         await db.close();
 
         return NextResponse.json({ shortCode, shortUrl });
-    } catch (error) {
+    } catch {
         return NextResponse.json({ error: 'Invalid URL' }, { status: 400 });
     }
 }

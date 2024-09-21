@@ -20,7 +20,7 @@ const URLShortenerHomeInput = ({ setUrl, url, handleShorten }: URLShortenerHomeI
                         <div>
                             <p className="text-[20px] mb-1">The AFTVnews URL Shortener is the easiest and quickest way to load a URL in the <a href="" className="text-orange-400 hover:text-black">Downloader App</a> on Amazon Fire TV and Google Android TV devices. </p>
                             <h2 className="text-[20px] font-bold mt-5">How it works:</h2>
-                            <p className="text-[20px]"> Enter any URL to get a short numeric code, like 12345, that can then be entered directly into the URL field in the Downloader App. You'll also get a matching short URL, like aftv.news/12345, that can be used and shared anywhere.</p>
+                            <p className="text-[20px]"> {`Enter any URL to get a short numeric code, like 12345, that can then be entered directly into the URL field in the Downloader App. You'll also get a matching short URL, like aftv.news/12345, that can be used and shared anywhere.`}</p>
                         </div>
                     </nav>
                     <nav className="max-w-[779px] w-full mx-auto flex justify-center items-center">
