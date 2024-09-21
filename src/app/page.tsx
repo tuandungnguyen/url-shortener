@@ -1,4 +1,4 @@
-import URLShortenerHomeSections from "./components/sections/URLShortenerHomeSections";
+import URLShortenerHomeSections from "./components/sections/URLShortenerHomes/URLShortenerHomeSections";
 
 function URLShortener() {
   return (<URLShortenerHomeSections></URLShortenerHomeSections>)
