@@ -1,5 +1,4 @@
-// src/app/[shortCode]/RedirectComponent.tsx
-"use client"; // Đánh dấu là component client
+"use client";
 
 import { useState, useEffect } from 'react';
 
