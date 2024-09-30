@@ -42,12 +42,12 @@ const URLShortenerHomeInput = ({ setUrl, url, handleShorten }: URLShortenerHomeI
                         type="text"
                         value={url}
                         onChange={(e) => setUrl(e.target.value)}
-                        placeholder="Nhập URL cần rút ngắn"
+                        placeholder="Paste your long URL here"
                         className="w-[1024px] h-[77px] text-[24px] px-4 rounded-md"
                     />
                 </nav>
                 <nav className="flex justify-center items-center">
-                    <button onClick={handleShorten} className="w-[1024px] h-[50px] bg-[#3d3d3d] text-white text-[24px] rounded-md hover:bg-white hover:text-black">Rút ngắn URL</button>
+                    <button onClick={handleShorten} className="w-[1024px] h-[50px] bg-[#3d3d3d] text-white text-[24px] rounded-md hover:bg-white hover:text-black">Shorten URL</button>
                 </nav>
                 <nav className="flex justify-center items-center pb-5">
                     <p className="text-[14px]">All submitted URLs will be publicly viewable by anyone.</p>
